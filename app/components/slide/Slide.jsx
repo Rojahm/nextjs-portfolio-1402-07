@@ -32,7 +32,7 @@ const Slide = () => {
           <FiArrowRight className="text-stone-200 text-[25px]" />
         </button>
       </div>
-      <div className="flex overflow-x-scroll snap-x" ref={carouselRef}>
+      <div className="flex Slider" ref={carouselRef}>
         <Section color={"red"} />
         <Section color={"cyan"} />
         <Section color={"stone"} />

@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.Slider {
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+.Slider::-webkit-scrollbar {
+  display: none;
+}
