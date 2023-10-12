@@ -17,7 +17,7 @@ const Slide = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
       <div className="flex min-w-full absolute top-[40vh] p-3">
         <button
           className="mr-auto bg-stone-300/50 rounded hover:bg-stone-500/50"
@@ -32,12 +32,16 @@ const Slide = () => {
           <FiArrowRight className="text-stone-200 text-[25px]" />
         </button>
       </div>
-      <div className="flex overflow-x-scroll" ref={carouselRef}>
+      <div className="flex overflow-x-scroll snap-x" ref={carouselRef}>
         <Section color={"red"} />
         <Section color={"cyan"} />
         <Section color={"stone"} />
         <Section color={"red"} />
         <Section color={"teal"} />
+        <Section color={"orange"} />
+        <Section color={"orange"} />
+        <Section color={"orange"} />
+        <Section color={"orange"} />
         <Section color={"orange"} />
       </div>
     </div>
