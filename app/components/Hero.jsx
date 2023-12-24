@@ -2,13 +2,13 @@ import DownButton from "./DownButton";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen snap-start flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-100 from-0% to-rose-50 to-25%">
+    <section className="">
       <div className="w-full flex flex-col justify-center items-center">
         <div className="text-center">
-          <h1 className=" text-rose-950 font-semibold">
+          <h1 className="title">
             <div>👋Hi I'm Roja Hosseini</div>
           </h1>
-          <h1 className=" text-rose-950 font-semibold">
+          <h1 className="title">
             <div>سلام من روجا حسینی هستم👋</div>
           </h1>
         </div>

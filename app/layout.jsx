@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <button className="absolute">🌒</button>
+        {/* <button className="absolute">🌒</button> */}
         {children}
       </body>
     </html>
