@@ -18,7 +18,7 @@ const Hero = ({ dark }) => {
   console.log(dark);
   return (
     <section id="hero">
-      <div className="flex justify-around items-center text-center mb-10">
+      <div className="flex flex-col md:flex-row justify-around items-center text-center md:mb-10">
         <Link
           href={"/"}
           className={
@@ -69,7 +69,7 @@ const Hero = ({ dark }) => {
           </div>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center p-10 md:p-1">
         <p>
           web/web app developer. Front-end React.JS, Next.JS Node.JS Full-Stack
           Developer
