@@ -16,7 +16,6 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 
 const Hero = ({ dark }) => {
-  console.log(dark);
   return (
     <section id="hero">
       <div className="flex flex-col md:flex-row justify-around items-center text-center md:mb-10">
