@@ -3,6 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 //custom
 import DownButton from "./DownButton";
+//UI UX Icons
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaTelegram,
+  FaYoutube,
+  FaFacebookF,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Hero = ({ dark }) => {
   console.log(dark);
@@ -25,13 +35,24 @@ const Hero = ({ dark }) => {
             className="rounded-full shadow-2xl"
           />
         </Link>
-        <div>
-          <h1 className="title">
-            <div>👋 Hi I'm Roja Hosseini</div>
-          </h1>
-          <h1 className="title">
-            <div>سلام من روجا حسینی هستم 👋</div>
-          </h1>
+        <div className="flex flex-col h-[150px] justify-evenly">
+          <div>
+            <h1 className="title">
+              <div>👋 Hi I'm Roja Hosseini</div>
+            </h1>
+            <h1 className="title">
+              <div>سلام من روجا حسینی هستم 👋</div>
+            </h1>
+          </div>
+          <div className="flex justify-between text-xl">
+            <FaLinkedin />
+            <FaInstagram />
+            <FaTelegram />
+            <FaYoutube />
+            <MdOutlineEmail />
+            <FaFacebookF />
+            <FaXTwitter />
+          </div>
         </div>
       </div>
       <div className="text-center">
