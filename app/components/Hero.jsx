@@ -3,14 +3,20 @@ import Image from "next/image";
 //custom
 import DownButton from "./DownButton";
 
-const Hero = () => {
+const Hero = ({ darkmode }) => {
   return (
-    <section className="">
-      <div className="w-full flex flex-col justify-center items-center">
-        <div className="text-center mb-3">
-          <Link>
-            <Image />
-          </Link>
+    <section>
+      <div className="flex justify-around items-center text-center mb-10">
+        <Link href={"/"}>
+          <Image
+            src={"/img/rojgandalf.jpeg"}
+            width={300}
+            height={300}
+            alt="Roja in Gandalf Custom"
+            className="rounded-full shadow-2xl"
+          />
+        </Link>
+        <div>
           <h1 className="title">
             <div>👋 Hi I'm Roja Hosseini</div>
           </h1>
@@ -18,6 +24,8 @@ const Hero = () => {
             <div>سلام من روجا حسینی هستم 👋</div>
           </h1>
         </div>
+      </div>
+      <div className="text-center">
         <p>
           web/web app developer. Front-end React.JS, Next.JS Node.JS Full-Stack
           Developer
