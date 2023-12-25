@@ -17,7 +17,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Hero = ({ dark }) => {
   console.log(dark);
   return (
-    <section>
+    <section id="hero">
       <div className="flex justify-around items-center text-center mb-10">
         <Link
           href={"/"}

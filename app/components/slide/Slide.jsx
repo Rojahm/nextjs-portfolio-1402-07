@@ -17,7 +17,7 @@ const Slide = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" id="work">
       <div className="flex min-w-full absolute top-[40vh] p-3">
         <button
           className="mr-auto bg-stone-300/50 rounded hover:bg-stone-500/50"
