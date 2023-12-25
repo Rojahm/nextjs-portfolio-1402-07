@@ -11,6 +11,7 @@ import {
   FaYoutube,
   FaFacebookF,
   FaXTwitter,
+  FaGithubAlt,
 } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -45,6 +46,9 @@ const Hero = ({ dark }) => {
             </h1>
           </div>
           <div className="title flex justify-between text-xl ">
+            <Link href={"/"}>
+              <FaGithubAlt className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
             <Link href={"/"}>
               <FaLinkedin className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
