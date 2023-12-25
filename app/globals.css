@@ -34,8 +34,8 @@ body {
 }
 
 .title {
-  @apply text-red-950/90 dark:text-neutral-50/70 font-semibold text-xl;
+  @apply text-slate-800/90 dark:text-neutral-50/80 font-semibold text-xl;
 }
 .text {
-  @apply text-red-950 dark:text-neutral-300/70;
+  @apply text-slate-800 dark:text-neutral-300/70;
 }

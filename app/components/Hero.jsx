@@ -24,7 +24,7 @@ const Hero = ({ dark }) => {
           className={
             dark
               ? "bg-slate-900 rounded-full transition-all duration-300 ease-in-out"
-              : "bg-blue-500/60 rounded-full transition-all duration-300 ease-in-out"
+              : "bg-cyan-500/60 rounded-full transition-all duration-300 ease-in-out"
           }
         >
           <Image
@@ -44,14 +44,28 @@ const Hero = ({ dark }) => {
               <div>سلام من روجا حسینی هستم 👋</div>
             </h1>
           </div>
-          <div className="flex justify-between text-xl">
-            <FaLinkedin />
-            <FaInstagram />
-            <FaTelegram />
-            <FaYoutube />
-            <MdOutlineEmail />
-            <FaFacebookF />
-            <FaXTwitter />
+          <div className="title flex justify-between text-xl ">
+            <Link href={"/"}>
+              <FaLinkedin className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <FaInstagram className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <FaTelegram className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <FaYoutube className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <MdOutlineEmail className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <FaFacebookF className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
+            <Link href={"/"}>
+              <FaXTwitter className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
+            </Link>
           </div>
         </div>
       </div>

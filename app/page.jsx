@@ -12,20 +12,20 @@ export default function Home() {
   return (
     <main className={darkMode && "dark"}>
       {/* min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth */}
-      <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth transision-all duration-150 ease-in-out bg-cyan-100 dark:bg-slate-800">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="dark:text-neutral-300 text-red-950 absolute top-1 left-1 transition-all duration-200 ease-in-out"
+          className="text absolute top-1 left-1 transition-all duration-200 ease-in-out"
         >
           {darkMode ? <FiSun /> : <FiMoon />}
         </button>
-        <div className="text h-screen snap-start flex justify-center items-center min-h-screen bg-red-100 dark:bg-slate-800">
+        <div className="text h-screen snap-start flex justify-center items-center min-h-screen">
           <Hero dark={darkMode} />
         </div>
         <div className="min-h-screen h-screen snap-start">
           <Slide />
         </div>
-        <div className="h-screen snap-start flex justify-center items-center min-h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-100 from-0% to-rose-50 to-25%">
+        <div className="h-screen snap-start flex justify-center items-center min-h-screen">
           <Contact />
         </div>
       </div>
