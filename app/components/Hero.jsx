@@ -1,15 +1,24 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 //custom
 import DownButton from "./DownButton";
 
-const Hero = ({ darkmode }) => {
+const Hero = ({ dark }) => {
+  console.log(dark);
   return (
     <section>
       <div className="flex justify-around items-center text-center mb-10">
-        <Link href={"/"}>
+        <Link
+          href={"/"}
+          className={
+            dark
+              ? "bg-slate-900 rounded-full transition-all duration-300 ease-in-out"
+              : "bg-blue-500/60 rounded-full transition-all duration-300 ease-in-out"
+          }
+        >
           <Image
-            src={"/img/rojgandalf.jpeg"}
+            src={"/img/rojGandalf.png"}
             width={300}
             height={300}
             alt="Roja in Gandalf Custom"

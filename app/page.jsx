@@ -20,7 +20,7 @@ export default function Home() {
           {darkMode ? <FiSun /> : <FiMoon />}
         </button>
         <div className="text h-screen snap-start flex justify-center items-center min-h-screen bg-red-100 dark:bg-slate-800">
-          <Hero darkMode={darkMode} />
+          <Hero dark={darkMode} />
         </div>
         <div className="min-h-screen h-screen snap-start">
           <Slide />
