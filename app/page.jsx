@@ -15,11 +15,11 @@ export default function Home() {
       <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="dark:text-neutral-300 bg-white absolute"
+          className="dark:text-neutral-300 text-red-950 absolute top-1 left-1 transition-all duration-200 ease-in-out"
         >
           {darkMode ? <FiSun /> : <FiMoon />}
         </button>
-        <div className="h-screen snap-start flex justify-center items-center min-h-screen bg-red-100 dark:bg-slate-800">
+        <div className="text h-screen snap-start flex justify-center items-center min-h-screen bg-red-100 dark:bg-slate-800">
           <Hero />
         </div>
         <div className="min-h-screen h-screen snap-start">

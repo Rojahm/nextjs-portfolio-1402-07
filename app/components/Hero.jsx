@@ -1,15 +1,21 @@
+import Link from "next/link";
+import Image from "next/image";
+//custom
 import DownButton from "./DownButton";
 
 const Hero = () => {
   return (
     <section className="">
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="text-center">
+        <div className="text-center mb-3">
+          <Link>
+            <Image />
+          </Link>
           <h1 className="title">
-            <div>👋Hi I'm Roja Hosseini</div>
+            <div>👋 Hi I'm Roja Hosseini</div>
           </h1>
           <h1 className="title">
-            <div>سلام من روجا حسینی هستم👋</div>
+            <div>سلام من روجا حسینی هستم 👋</div>
           </h1>
         </div>
         <p>
@@ -17,7 +23,6 @@ const Hero = () => {
           Developer
         </p>
         <p>I Make my Projects from scratch and deploy them</p>
-
         <p>You can view my academic and experience resume on LinkedIn</p>
       </div>
       <DownButton />
