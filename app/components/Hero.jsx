@@ -80,7 +80,7 @@ const Hero = ({ dark }) => {
         <p>I Make my Projects from scratch and deploy them</p>
         <p>You can view my academic and experience resume on LinkedIn</p>
       </div>
-      <DownButton />
+      <DownButton link={"#work"} />
     </section>
   );
 };
