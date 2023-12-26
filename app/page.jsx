@@ -21,7 +21,11 @@ export default function Home() {
           onClick={() => setDarkMode(!darkMode)}
           className="text absolute top-1 left-1 transition-all duration-200 ease-in-out"
         >
-          {darkMode ? <FiSun /> : <FiMoon />}
+          {darkMode ? (
+            <FiSun className="hover:rotate-180 transition-all duration-1000 ease-in-out" />
+          ) : (
+            <FiMoon className="absolute top-3 -translate-y-2 transition-all duration-1000 ease-in-out" />
+          )}
         </button>
         <div className="text h-screen snap-start flex justify-center items-center min-h-screen">
           <Hero dark={darkMode} />
