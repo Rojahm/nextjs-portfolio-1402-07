@@ -1,4 +1,3 @@
-import Nav from "./components/Nav";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -14,7 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* <button className="absolute">🌒</button> */}
-        <Nav />
         {children}
       </body>
     </html>

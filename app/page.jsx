@@ -2,6 +2,8 @@
 import { useState } from "react";
 // Ui icons
 import { FiMoon, FiSun } from "react-icons/fi";
+// Custom
+import Nav from "./components/Nav";
 
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -11,6 +13,8 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
     <main className={darkMode && "dark"}>
+      <Nav />
+
       {/* min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth */}
       <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth transision-all duration-150 ease-in-out bg-cyan-100 dark:bg-slate-800">
         <button
