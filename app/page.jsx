@@ -19,12 +19,12 @@ export default function Home() {
       <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth transision-all duration-150 ease-in-out bg-cyan-100 dark:bg-slate-800">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="text absolute top-1 left-1 transition-all duration-200 ease-in-out"
+          className="text absolute top-2 left-2"
         >
           {darkMode ? (
             <FiSun className="hover:rotate-180 transition-all duration-1000 ease-in-out" />
           ) : (
-            <FiMoon className="absolute top-3 -translate-y-2 transition-all duration-1000 ease-in-out" />
+            <FiMoon className="transition-all duration-1000 ease-in-out" />
           )}
         </button>
         <div className="text h-screen snap-start flex justify-center items-center min-h-screen">
