@@ -14,8 +14,6 @@ export default function Home() {
   return (
     <main className={darkMode && "dark"}>
       <Nav />
-
-      {/* min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth */}
       <div className="content min-w-full flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth transision-all duration-150 ease-in-out bg-cyan-100 dark:bg-slate-800">
         <button
           onClick={() => setDarkMode(!darkMode)}
