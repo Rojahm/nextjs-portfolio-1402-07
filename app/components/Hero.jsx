@@ -45,28 +45,31 @@ const Hero = ({ dark }) => {
             </h1>
           </div>
           <div className="title flex justify-between text-xl ">
-            <Link href={"/"}>
+            <Link href={"https://github.com/Rojahm"} target="_blank">
               <FaGithubAlt className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
-            <Link href={"/"}>
+            <Link
+              href={"https://www.linkedin.com/in/roja-h-m-311524233/"}
+              target="_blank"
+            >
               <FaLinkedin className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
-            <Link href={"/"}>
+            {/* <Link href={"/"}>
               <FaInstagram className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
-            </Link>
-            <Link href={"/"}>
+            </Link> */}
+            <Link href={"https://t.me/rojahm"} target="_blank">
               <FaTelegram className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://www.youtube.com/@rojahm"} target="_blank">
               <FaYoutube className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
-            <Link href={"/"}>
+            <Link href={"mailto:roja@rojahm.ir"} target="_blank">
               <MdOutlineEmail className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
-            <Link href={"/"}>
+            {/* <Link href={"/"}>
               <FaFacebookF className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
-            </Link>
-            <Link href={"/"}>
+            </Link> */}
+            <Link href={"https://twitter.com/Ro1194H"} target="_blank">
               <FaXTwitter className="transition-all duration-150 ease-in-out hover:-translate-y-1" />
             </Link>
           </div>
