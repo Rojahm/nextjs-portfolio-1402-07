@@ -42,3 +42,11 @@ body {
 .nav-item {
   @apply shadow-xl rounded-full transition-all duration-150 ease-in-out hover:rotate-12 hover:translate-x-1 opacity-80 hover:opacity-100;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

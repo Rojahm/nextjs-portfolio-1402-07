@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Slide from "./components/slide/Slide";
+import SliderPage from "./slider/page";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -29,7 +30,7 @@ export default function Home() {
           <Hero dark={darkMode} />
         </div>
         <div className="min-h-screen h-screen snap-start">
-          <Slide />
+          <SliderPage />
         </div>
         <div className="h-screen snap-start flex justify-center items-center min-h-screen">
           <Contact />
